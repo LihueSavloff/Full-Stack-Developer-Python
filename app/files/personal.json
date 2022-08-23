@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "telefono": "123456789",
+        "id": 4
+    },
+    {
+        "nombre": "Maria",
+        "apellido": "Lopez",
+        "telefono": "123456789",
+        "id": 5
+    },
+    {
+        "nombre": "Pedro",
+        "apellido": "Gomez",
+        "telefono": "123456789",
+        "id": 6
+    },
+    {
+        "nombre": "AAA",
+        "apellido": "ZZZ",
+        "telefono": "211 123 45678",
+        "id": 7
+    }
+]

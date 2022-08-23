@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h1>Lista de Ingresos</h1>
+
+  <br>
+  <a href="{{ url_for('ingresar_ingreso') }}"><button type="button" class="btn btn-primary">Nuevo Ingreso</button></a>
+  <br><br>
+  <!-- crear tabla con lista de ingreso -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Dni</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Motivo</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in ingresos %}
+      <tr>
+        <th scope="row">{{ i.id }}</th>
+        <td>{{ i.nombre }}</td>
+        <td>{{ i.apellido }}</td>
+        <td>{{ i.dni }}</td>
+        <td>{{ i.fecha }}</td>
+        <td>{{ i.motivo }}</td>
+        <td>
+          <a href="{{ url_for('index', borrar=i.id) }}"><span class="badge bg-danger">Eliminar</span></a>
+          <a href="{{ url_for('editar_ingreso', id_ingreso=i.id) }}"><span class="badge bg-secondary">Editar</span></a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
+

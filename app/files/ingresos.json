@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Maria",
+        "apellido": "Lopez",
+        "dni": "123456789",
+        "fecha": "18/18/2022",
+        "motivo": "123456789",
+        "id": 4
+    },
+    {
+        "nombre": "Federico",
+        "apellido": "Martinez",
+        "dni": "12345678",
+        "fecha": "19/08/2022",
+        "motivo": "Ingresante",
+        "id": 5
+    },
+    {
+        "nombre": "Adrian",
+        "apellido": "Gomez",
+        "dni": "12345678",
+        "fecha": "21/08/2022",
+        "motivo": "Invitado",
+        "id": 6
+    }
+]
